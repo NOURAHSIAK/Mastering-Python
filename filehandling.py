@@ -18,6 +18,8 @@
 # myfile = open(r"C:\Users\kaisb\OneDrive\Documents\GitHub\Mastering-Python\kais.txt", "a")
 # myfile.truncate(5)
 # print(myfile.tell())
-myfile = open(r"C:\Users\kaisb\OneDrive\Documents\GitHub\Mastering-Python\kais.txt", "r")
-myfile.seek(13)
-print(myfile.read())
+# myfile = open(r"C:\Users\kaisb\OneDrive\Documents\GitHub\Mastering-Python\kais.txt", "r")
+# myfile.seek(13)
+# print(myfile.read())
+import os
+os.remove(r"C:\Users\kaisb\OneDrive\Documents\GitHub\Mastering-Python\fun.txt")
