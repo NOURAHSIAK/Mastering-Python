@@ -1,0 +1,20 @@
+# import termcolor
+# import pyfiglet
+# # print(dir(termcolor))
+# # print(dir(pyfiglet))
+# # print(pyfiglet.figlet_format("elzero"))
+# print(termcolor.colored(pyfiglet.figlet_format("elzero"), color="blue"))
+import datetime
+# print(dir(datetime))
+# print(dir(datetime.datetime))
+# print(datetime.datetime.now().year)
+# print(datetime.datetime.now().month)
+# print(datetime.datetime.now().day)
+mybirthday = datetime.datetime(1987, 10, 24)
+# timenow = datetime.datetime.now()
+# print(f"i lived for {(timenow - mybirthday).days} Days")
+print(mybirthday.strftime("%A"))
+print(mybirthday.strftime("%a"))
+print(mybirthday.strftime("%B"))
+print(mybirthday.strftime("%b"))
+print(mybirthday.strftime("%d-%b-%y"))
