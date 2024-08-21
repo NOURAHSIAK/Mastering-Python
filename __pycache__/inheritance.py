@@ -8,10 +8,12 @@ class Food:
         print("eat method from base class")
 
 class Apple(Food):
-    def __init__(self):
-        print("apple is created from derived class")
+    def __init__(self, name, price, amount):
+        super().__init__(name, price)
+        self.amount = amount
+        print(f"{self.name} is created from derived class and price is {self.price} and amount is {self.amount}")
     
 
-food_one = Food("pizza", 6)
-food_two = Apple()
+# food_one = Food("pizza", 6)
+food_two = Apple("pizza", 150, 600)
 food_two.eat()
